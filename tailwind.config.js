@@ -11,10 +11,35 @@ export default {
     ],
 
     theme: {
+         screens: {
+            sm: '640px',
+            md: '768px',
+            lg: '1024px',
+            xl: '1280px'
+          },
+          fontSize: {
+              'exs':'0.40rem',
+              'xxs': '0.60rem',
+              'sm': '0.9rem',
+              'base': '1rem',
+              'xl': '1.25rem',
+              '2xl': '1.563rem',
+              '3xl': '1.953rem',
+              '4xl': '2.441rem',
+              '5xl': '3.052rem',
+            },
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
-            },
+                monteserat: ["monteserat", "sans-serif"],
+                josefin: ["josefin", "sans-serif"],
+              },
+            colors: {
+                appTheme: '#F4F5FA', 
+                primaryColor: '#008f3f',
+                darkPrimaryColor: '#006400',
+                lightPrimaryColor: '#82dc9d',
+                complementaryColor: '#FFF000',
+              },
         },
     },
 
